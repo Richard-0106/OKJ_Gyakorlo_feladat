@@ -6,6 +6,7 @@
 package program;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Collections;
 import java.util.Date;
@@ -14,7 +15,7 @@ import java.util.Date;
  *
  * @author Li.Richard
  */
-public class KiallitasTargy implements Comparable<KiallitasTargy>{
+public class KiallitasTargy implements Serializable,Comparable<KiallitasTargy>{
    private LocalDate datum;
    private String keszito;
    private String cim;

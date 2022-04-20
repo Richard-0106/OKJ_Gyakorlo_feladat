@@ -5,13 +5,14 @@
  */
 package program;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
 
-public class Galeria implements Comparable<KiallitasTargy>,Iterable<Galeria>{
+public class Galeria implements Comparable<KiallitasTargy>,Iterable<Galeria>,Serializable{
     private ArrayList<KiallitasTargy> targyak;
 
     public Galeria() {
