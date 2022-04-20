@@ -14,7 +14,7 @@ import java.util.List;
 public class Galeria implements Comparable<KiallitasTargy>,Iterable<Galeria>{
     private ArrayList<KiallitasTargy> targyak;
 
-    public Galeria(ArrayList<KiallitasTargy> targyak) {
+    public Galeria() {
         targyak = new ArrayList<>();
     }
     public void felvesz(KiallitasTargy targy){
@@ -31,6 +31,11 @@ public class Galeria implements Comparable<KiallitasTargy>,Iterable<Galeria>{
         ArrayList<KiallitasTargy> keszitolista = new ArrayList(targyak);
         Collections.sort(keszitolista, new KeszitoComparator());
         return keszitolista;
+    }
+
+    @Override
+    public String toString() {
+        return "Galeria{" + "targyak=" + targyak + '}';
     }
 
     @Override

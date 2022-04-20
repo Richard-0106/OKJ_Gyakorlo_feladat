@@ -24,10 +24,10 @@ public class KiallitasTargy implements Comparable<KiallitasTargy>{
  
     }
     public KiallitasTargy(LocalDate datum, String keszito, String cim) {
-        this.datum = datum;
+        
         this.keszito = keszito;
         this.cim = cim;
-        if(datum.isEqual(LocalDate.now())){
+        if(!(datum.isEqual(LocalDate.now()))){
          try {
                 throw new IOException();
             } catch (IOException ex) {

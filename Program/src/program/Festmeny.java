@@ -11,6 +11,7 @@ public class Festmeny extends KiallitasTargy {
         this.fajl=fajl;
     }
 
+
     public String getFajl() {
         return fajl;
     }
